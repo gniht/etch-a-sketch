@@ -10,6 +10,9 @@
 .cell:hover {
   background-color: lightseagreen;
 }
+.marked{
+  background-color: darkcyan;
+}
 .container {
   height: fit-content;
   width: fit-content;  

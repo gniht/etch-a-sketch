@@ -3,7 +3,8 @@
 function squareDivGrid(dimension){
   const gridContainer = document.createElement("div");
   gridContainer.classList.add("container");
-  gridContainer.setAttribute("style",`grid-template-columns: repeat(${dimension}, auto)`);  
+  gridContainer.setAttribute("style",`grid-template-columns: repeat(${dimension}, auto)`);
+  gridContainer.id = "sketch";  
   document.querySelector('body').append(gridContainer);
   const size = 800/dimension;
   for (let i = 0; i < dimension; i++){
@@ -20,6 +21,22 @@ if(gridSize > 80){
   gridSize = 80;
 }
 squareDivGrid(gridSize);
+
+let sketch = document.getElementById("sketch");
+let drawing = false;
+
+sketch.addEventListener("mousedown", e =>{
+  e.target.classList.add("marked");
+  drawing = true;
+});
+sketch.addEventListener("mouseup", e =>{
+  drawing = false;
+});
+sketch.addEventListener("mousemove", e =>{
+  if(drawing){
+    e.target.classList.add("marked");
+  }
+});
 
 
 
