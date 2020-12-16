@@ -1,0 +1,19 @@
+
+div {
+  width: 20px;
+  height: 20px;  
+}
+
+div {
+  border: 1px solid lightgrey;
+}
+div:hover {
+  background-color: lightseagreen;
+}
+#container {
+  display: grid;
+  background-color: ivory;  
+  grid-template-columns: repeat(16, auto);   
+}
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gniht/etch-a-sketch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gniht/etch-a-sketch/issues"
+  },
+  "homepage": "https://github.com/gniht/etch-a-sketch#readme"
+}
